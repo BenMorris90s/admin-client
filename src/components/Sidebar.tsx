@@ -3,7 +3,7 @@ import React from "react";
 function Sidebar() {
   return (
     <aside className="w-64 h-screen" aria-label="Sidebar">
-      <div className="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
+      <div className="overflow-y-auto h-screen py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
         <ul className="space-y-2">
           <li>
             <a
