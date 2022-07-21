@@ -2,8 +2,8 @@ import React from "react";
 
 function BundleTable() {
     return <div className="overflow-x-auto w-full relative">
-        <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-            <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <table className="w-full text-sm text-left text-slate-50 dark:text-gray-400">
+            <thead className="text-xs text-slate-50 uppercase bg-white dark:bg-gray-700 dark:text-gray-400">
             <tr>
                 <th scope="col" className="py-3 px-6">
                     Product name
@@ -21,7 +21,7 @@ function BundleTable() {
             </thead>
             <tbody>
             <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <th scope="row" className="py-4 px-6 font-medium text-slate-50 whitespace-nowrap dark:text-white">
                     Apple MacBook Pro 17"
                 </th>
                 <td className="py-4 px-6">
