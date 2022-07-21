@@ -1,9 +1,13 @@
 import React from "react";
-import { useAppDispatch } from "../hooks";
+import { useAppDispatch, useAppSelector } from "../hooks";
+import StateInterface from "../interfaces/state";
 
 function BundleTable() {
     const dispatch = useAppDispatch();
+    const selectBundles = (state: StateInterface) => state.bundles;
+    const bundles = useAppSelector(selectBundles);
 
+    console.info(bundles);
     dispatch({ type : "test"});
 
     return <div className="overflow-x-auto w-full relative">
