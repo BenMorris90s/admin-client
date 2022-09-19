@@ -14,7 +14,6 @@ export const createBundleSlice = createSlice({
     initialState,
     reducers: {
         toggle: (state) => {
-            console.info("Action running")
             state.showCreateBundleModal = !state.showCreateBundleModal
         },
     },
