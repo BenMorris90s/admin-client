@@ -8,7 +8,7 @@ function Sidebar() {
 
   const handleNewBundle = () => {
     dispatch(toggle())
-  };
+  }
 
   return (
     <aside className="w-64 h-screen" aria-label="Sidebar">
@@ -69,4 +69,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default Sidebar

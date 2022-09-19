@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 function BundleTable() {
     return <div className="overflow-x-auto w-full relative">
@@ -67,4 +67,4 @@ function BundleTable() {
     </div>
 }
 
-export default BundleTable;
+export default BundleTable

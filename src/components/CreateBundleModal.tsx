@@ -1,13 +1,13 @@
-import React from "react";
-import {useAppDispatch} from "../hooks";
-import {toggle} from "../reducers/createBundleSlice";
+import React from "react"
+import {useAppDispatch} from "../hooks"
+import {toggle} from "../reducers/createBundleSlice"
 
 function CreateBundleModal() {
-    const dispatch = useAppDispatch();
+    const dispatch = useAppDispatch()
 
     const handleNewBundle = () => {
-        dispatch(toggle());
-    };
+        dispatch(toggle())
+    }
 
     return (
         <div className="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -47,4 +47,4 @@ function CreateBundleModal() {
     );
 }
 
-export default CreateBundleModal;
+export default CreateBundleModal
