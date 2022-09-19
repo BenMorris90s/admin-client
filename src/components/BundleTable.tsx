@@ -1,15 +1,6 @@
 import React from "react";
-import { useAppDispatch, useAppSelector } from "../hooks";
-import StateInterface from "../interfaces/state";
 
 function BundleTable() {
-    const dispatch = useAppDispatch();
-    const selectBundles = (state: StateInterface) => state.bundles;
-    const bundles = useAppSelector(selectBundles);
-
-    console.info(bundles);
-    dispatch({ type : "test"});
-
     return <div className="overflow-x-auto w-full relative">
         <table className="w-full text-sm text-left text-slate-50 dark:text-gray-400 odd:bg-white even:bg-slate-500">
             <thead className="text-xs text-slate-50 uppercase dark:bg-gray-700 dark:text-gray-400">

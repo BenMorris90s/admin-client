@@ -1,14 +1,23 @@
-import React from "react";
+import React from "react"
+import {useAppDispatch} from "../hooks"
+import {toggle} from "../reducers/createBundleSlice"
+
 
 function Sidebar() {
+  const dispatch = useAppDispatch()
+
+  const handleNewBundle = () => {
+    dispatch(toggle())
+  };
+
   return (
     <aside className="w-64 h-screen" aria-label="Sidebar">
       <div className="overflow-y-auto h-screen py-4 px-3 bg-primary-grey dark:bg-gray-800">
         <ul className="space-y-2">
           <li>
-            <a
-              href="https://www.google.com"
-              className="flex items-center p-2 text-base font-normal text-white rounded-lg dark:text-white hover:border-primary-yellow border-transparent border-2 dark:hover:bg-gray-700"
+            <div
+              onClick={handleNewBundle}
+              className="flex items-center hover:cursor-pointer p-2 text-base font-normal text-white rounded-lg dark:text-white hover:border-primary-yellow border-transparent border-2 dark:hover:bg-gray-700"
             >
               <svg
                 className="w-6 h-6 text-white transition duration-75 dark:text-gray-400 group-hover:text-primary-yellow dark:group-hover:text-white"
@@ -20,7 +29,7 @@ function Sidebar() {
                 <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
               </svg>
               <span className="ml-3">New Bundle</span>
-            </a>
+            </div>
           </li>
           <li>
             <a

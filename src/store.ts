@@ -1,9 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit';
-import reducer from "./reducer";
+import { configureStore } from '@reduxjs/toolkit'
+import createBundleReducer from "./reducers/createBundleSlice"
 
-export const store = configureStore({ reducer });
+// From redux-toolkit js https://redux-toolkit.js.org/tutorials/typescript
+export const store = configureStore({
+    reducer: createBundleReducer
+})
 
-// Infer the `RootState` and `AppDispatch` types from the store itself
 export type RootState = ReturnType<typeof store.getState>
-// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
 export type AppDispatch = typeof store.dispatch
