@@ -1,6 +1,6 @@
 import React from "react"
 import {useAppDispatch} from "../hooks"
-import {toggle} from "../reducers/createBundleSlice"
+import {toggle} from "../reducers/createBundle"
 
 
 function Sidebar() {

@@ -1,7 +1,11 @@
-import React from "react"
+import React, {ChangeEvent} from "react";
 import {Trans} from 'react-i18next'
 
 function Dropzone() {
+
+    const handleOnChange = (event: ChangeEvent) => {
+        console.info(event)
+    }
 
     return (
         <div className="flex justify-center items-center w-full">
@@ -18,7 +22,7 @@ function Dropzone() {
                         <Trans><span className="font-semibold">Click to upload</span> or drag and drop</Trans></p>
                     <p className="text-xs text-gray-500 dark:text-gray-400"></p>
                 </div>
-                <input id="dropzone-file" type="file" className="hidden"/>
+                <input id="dropzone-file" type="file" className="hidden" onChange={handleOnChange}/>
             </label>
         </div>
     )

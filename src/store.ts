@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import createBundleReducer from "./reducers/createBundleSlice"
+import createBundleReducer from "./reducers/createBundle"
 
 // From redux-toolkit js https://redux-toolkit.js.org/tutorials/typescript
 export const store = configureStore({

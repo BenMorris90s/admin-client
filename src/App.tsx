@@ -4,7 +4,7 @@ import BundleTable from "./components/BundleTable"
 import "./App.css"
 import {useAppSelector} from "./hooks"
 import CreateBundleModal from "./components/CreateBundleModal"
-import {showCreateBundleModal} from "./reducers/createBundleSlice"
+import {showCreateBundleModal} from "./reducers/createBundle"
 
 
 function App() {

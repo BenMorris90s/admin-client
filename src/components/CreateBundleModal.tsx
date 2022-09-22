@@ -1,6 +1,6 @@
 import React from "react"
 import {useAppDispatch} from "../hooks"
-import {toggle} from "../reducers/createBundleSlice"
+import {toggle} from "../reducers/createBundle"
 import {useTranslation} from 'react-i18next'
 import Dropzone from "./Dropzone";
 

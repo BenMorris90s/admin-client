@@ -9,7 +9,7 @@ const initialState: NewBundleState = {
     showCreateBundleModal: false,
 }
 
-export const createBundleSlice = createSlice({
+export const createBundle = createSlice({
     name: 'createBundle',
     initialState,
     reducers: {
@@ -19,8 +19,8 @@ export const createBundleSlice = createSlice({
     },
 })
 
-export const { toggle } = createBundleSlice.actions
+export const { toggle } = createBundle.actions
 
 export const showCreateBundleModal = (state: RootState) => state.showCreateBundleModal
 
-export default createBundleSlice.reducer
+export default createBundle.reducer
