@@ -1,8 +1,14 @@
 ## Run Locally
 
 ```shell
+npm install
 npm run start
 ```
+
+## Linting
+
+Project is linted using sonar lint. IDE/ editor extension is available.
+https://www.sonarlint.org/
 
 ## Colour Schemes
 
