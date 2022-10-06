@@ -1,10 +1,20 @@
 import React, {ChangeEvent} from "react";
 import {Trans} from 'react-i18next'
+import {FileUploadResult} from "../interfaces/FileUploadResult";
+import {uploadFile} from "../api/bundles";
 
 function Dropzone() {
 
-    const handleOnChange = (event: ChangeEvent) => {
-        console.info(event)
+    const handleFileUpload = (_event: ChangeEvent) => {
+        const result: FileUploadResult = uploadFile()
+
+        if (result.success) {
+            console.info("Success!")
+            // TODO: show success feedback
+        } else {
+            console.error("Fail!")
+            // TODO: show error feedback
+        }
     }
 
     return (
@@ -22,7 +32,7 @@ function Dropzone() {
                         <Trans><span className="font-semibold">Click to upload</span> or drag and drop</Trans></p>
                     <p className="text-xs text-gray-500 dark:text-gray-400"></p>
                 </div>
-                <input id="dropzone-file" type="file" className="hidden" onChange={handleOnChange}/>
+                <input id="dropzone-file" type="file" className="hidden" onChange={handleFileUpload}/>
             </label>
         </div>
     )
