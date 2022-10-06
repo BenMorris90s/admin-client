@@ -1,3 +1,10 @@
+This is a work in progress project. It is intended to provide users with the ability to create PDF bundles compliant with UK court requirements:
+
+https://communities.lawsociety.org.uk/civil-litigation-features-and-comment/court-e-bundle-requirements-complete-2021-guide/6001815.article
+
+Backend infrastructure is still under development. As such, this project does not yet require any configuration to run locally.
+
+
 ## Run Locally
 
 ```shell
